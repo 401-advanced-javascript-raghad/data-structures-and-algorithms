@@ -1,0 +1,29 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "## here you can access to all my challenge files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osamamousa204/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osamamousa204/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/osamamousa204/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "jest-cli": "^26.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "jest": "^26.0.1"
+  }
+}

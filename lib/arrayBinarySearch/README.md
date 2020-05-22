@@ -12,4 +12,4 @@ We should know how to deal with the array, and the elements in the array.
 ## Time : O(n)
 
 ## Solution
-![array-binary-search](../../assets/array-binary-search.png)
+![array-binary-search](../assets/array-binary-search.png)

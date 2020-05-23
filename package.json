@@ -19,7 +19,9 @@
     "url": "https://github.com/osamamousa204/data-structures-and-algorithms/issues"
   },
   "homepage": "https://github.com/osamamousa204/data-structures-and-algorithms#readme",
-  "dependencies": {},
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
   "devDependencies": {
     "eslint": "^7.0.0",
     "jest": "^26.0.1"

@@ -3,19 +3,18 @@
 const LinkedList = require('../linkedList/linked-list');
 const faker = require('faker');
 
-let list = new LinkedList(); // creates a linked-list instance
+let list = new LinkedList();
 let length = faker.random.number();
 let values = [];
 for (let i = 0; i < length; i++) {
-  values.push(faker.random.word()); // fills an array of random length with random word values
+  values.push(faker.random.word());
 }
 
 for (let i = 0; i < values.length; i++) {
-  list.insert(values[i]); // fills the linked-list with those random values
+  list.insert(values[i]);
 }
 
-values.reverse(); // reverses the values (so it's in the same order as the list)
-
+values.reverse();
 
 describe('linked lists', () => {
   it('Can successfully instantiate an empty linked list', () => {
@@ -27,7 +26,7 @@ describe('linked lists', () => {
     let newValue = faker.random.word();
     list.insert(newValue);
     values.unshift(newValue);
-    expect(list.head.value).toBe(values[0]); // checks the first node's value against the values array
+    expect(list.head.value).toBe(values[0]);
   });
 
   it('The head property will properly point to the first node in the linked list', () => {
@@ -36,21 +35,20 @@ describe('linked lists', () => {
   });
 
   it('Can properly insert multiple nodes into the linked list', () => {
-    // let reversedValues = values.reverse();
     let current = list.head;
     for (let i = 0; i < values.length; i++) {
-      expect(current.value).toBe(values[i]); // checks every value inserted in the linked list against the values array (reversed)
+      expect(current.value).toBe(values[i]); 
       current = current.next;
     }
   });
 
   it('Will return true when finding a value within the linked list that exists', () => {
-    let randomValue = values[faker.random.number(values.length - 1)]; // picks a random value in the values array
+    let randomValue = values[faker.random.number(values.length - 1)];
     expect(list.includes(randomValue)).toBe(true);
   });
 
   it('Will return false when searching for a value in the linked list that does not exist', () => {
-    let randomValue = faker.random.number(); // random number (tested list only contains words)
+    let randomValue = faker.random.number();
     expect(list.includes(randomValue)).toBe(false);
   });
 

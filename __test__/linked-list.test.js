@@ -90,23 +90,4 @@ describe('linked list insertions', () => {
     expect(current.value).toEqual(newValue);
   });
 
-  it('Can successfully insert a node before the first node of a linked list', () => {
-    let newValue = faker.random.word();
-    list.insertBefore(newValue, list.head.value);
-    expect(list.head.value).toEqual(newValue);
-  });
-
-  it('Can successfully insert after a node in the middle of the linked list', () => {
-    let newValue = faker.random.word();
-    list.insertAfter(newValue, values[Math.floor(values.length / 2)]);
-    let current = list.head;
-    while (current.value !== newValue) current = current.next;
-    expect(current.value).toEqual(newValue);
-  });
-
-  it('Can successfully insert a node after the last node of the linked list', () => {
-    let newValue = faker.random.word();
-    list.insertAfter(newValue, list.head.value);
-    expect(list.current.value).toEqual(newValue);
-  });
 });

@@ -56,3 +56,57 @@ describe('linked lists', () => {
     expect(list.toString()).toEqual(values);
   });
 });
+describe('linked list insertions', () => {
+  it('Can successfully add a node to the end of the linked list', () => {
+    let newValue = faker.random.word();
+    list.append(newValue);
+    // let lastNode;
+    let current = list.head;
+    while (current.next) current = current.next;
+    expect(current.value).toEqual(newValue);
+  });
+
+  it('Can successfully add multiple nodes to the end of a linked list', () => {
+    let moreValues = [];
+    for (let i = 0; i < 11; i++) {
+      moreValues.push(faker.random.word());
+    }
+    for (let i = 0; i < moreValues.length; i++) {
+      list.append(moreValues[i]);
+    }
+    values.concat(moreValues);
+    let current = list.head;
+    for (let i = 0; i < values.length; i++) {
+      expect(current.value).toBe(values[i]);
+      current = current.next;
+    }
+  });
+
+  it('Can successfully insert a node before a node located in the middle of a linked list', () => {
+    let newValue = faker.random.word();
+    list.insertBefore(newValue, values[Math.floor(values.length / 2)]);
+    let current = list.head;
+    while (current.value !== newValue) current = current.next;
+    expect(current.value).toEqual(newValue);
+  });
+
+  it('Can successfully insert a node before the first node of a linked list', () => {
+    let newValue = faker.random.word();
+    list.insertBefore(newValue, list.head.value);
+    expect(list.head.value).toEqual(newValue);
+  });
+
+  it('Can successfully insert after a node in the middle of the linked list', () => {
+    let newValue = faker.random.word();
+    list.insertAfter(newValue, values[Math.floor(values.length / 2)]);
+    let current = list.head;
+    while (current.value !== newValue) current = current.next;
+    expect(current.value).toEqual(newValue);
+  });
+
+  it('Can successfully insert a node after the last node of the linked list', () => {
+    let newValue = faker.random.word();
+    list.insertAfter(newValue, list.head.value);
+    expect(list.current.value).toEqual(newValue);
+  });
+});

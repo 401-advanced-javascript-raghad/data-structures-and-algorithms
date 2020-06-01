@@ -92,5 +92,26 @@ class LinkedList {
     current.next = node;
     return this.head;
   }
+  kthFromEnd(k) {
+    if (typeof k != 'number' || k < 0 || !this.head) return 'Exception';
+
+    let frontSide = this.head;
+    let backSide = this.head;
+
+    try {
+      for (let i = 0; i <= k; i++) {
+        if (!frontSide.next) return backSide.value;
+        frontSide = frontSide.next;
+      }
+    }
+    catch (error) {
+      return 'Exception';
+    }
+    while (frontSide.next) {
+      frontSide = frontSide.next;
+      backSide = backSide.next;
+    }
+    return backSide.next.value;
+  }
 } 
 module.exports = LinkedList;

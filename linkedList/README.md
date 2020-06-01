@@ -23,6 +23,7 @@ Within your LinkedList class, include a head property. Upon instantiation, an em
 - append() => Time: O(n) , Space: O(1)
 - insertAfter() => Time: O(n) , Space: O(1)
 - insertBefor() => Time: O(n) , Space: O(1)
+- kthFromEnd() => Time: O(n) , Space: O(1)
 
 ## WhiteBoard / CI
 - [whiteboard](../assets/linked-list.jpeg)

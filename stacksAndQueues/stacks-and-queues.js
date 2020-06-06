@@ -24,9 +24,9 @@ class Stack {
 
   pop() {
     if (this.top) {
-      let popped = this.top.value;
+      let poppedVar = this.top.value;
       this.top = this.top.next;
-      return popped;
+      return poppedVar;
     } else {
       return null;
     }
@@ -37,6 +37,13 @@ class Stack {
       return this.top.value;
     } else {
       return null;
+    }
+  }
+  isEmpty(){
+    if (this.top) {
+      return 'true';
+    } else {
+      return 'false';
     }
   }
 }
@@ -71,6 +78,13 @@ class Queue {
   peek() {
     if (this.front) {
       return this.front.value;
+    }
+  }
+  isEmpty(){
+    if (this.front) {
+      return 'true';
+    } else {
+      return 'false';
     }
   }
 }

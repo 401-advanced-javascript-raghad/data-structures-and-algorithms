@@ -41,9 +41,9 @@ class Stack {
   }
   isEmpty(){
     if (this.top) {
-      return 'true';
-    } else {
       return 'false';
+    } else {
+      return 'true';
     }
   }
 }
@@ -82,9 +82,9 @@ class Queue {
   }
   isEmpty(){
     if (this.front) {
-      return 'true';
-    } else {
       return 'false';
+    } else {
+      return 'true';
     }
   }
 }

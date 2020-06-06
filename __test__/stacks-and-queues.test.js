@@ -46,8 +46,7 @@ describe('stacks-and-queues.js', () => {
     expect(stack.top).toBe(null);
   });
 
-  // Can successfully peek the next item on the stack.
-  it('CCan successfully peek the next item on the stack', () => {
+  it('Can successfully peek the next item on the stack', () => {
     let stack = new Stack();
     let val = faker.random.word();
     stack.push(faker.random.word());
@@ -60,12 +59,59 @@ describe('stacks-and-queues.js', () => {
     expect(stack instanceof Stack).toBeTruthy();
   });
   // Calling pop or peek on empty stack raises exception
-  // Can successfully enqueue into a queue
-  // Can successfully enqueue multiple values into a queue
-  // Can successfully dequeue out of a queue the expected value
-  // Can successfully peek into a queue, seeing the expected value
-  // Can successfully empty a queue after multiple dequeues
-  // Can successfully instantiate an empty queue
-  // Calling dequeue or peek on empty queue raises exception
+  it('Calling pop or peek on empty stack raises exception', ()=> {
+    let stack = new Stack();
+    expect(stack.isEmpty()).toBeTruthy();
+  });
+  it('Can successfully enqueue into a queue', () => {
+    let queue = new Queue();
+    let val = faker.random.word();
+    queue.enqueue(val);
+    expect(val).toEqual(queue.front.value);
+  });
+  it('Can successfully enqueue multiple values into a queue', () => {
+    let queue = new Queue();
+    for (let i = 0; i < 10; i++) {
+      queue.enqueue(i);
+    }
+    expect(queue.front.value).toBe(0);
+    expect(queue.front.next.value).toBe(1);
+    expect(queue.front.next.next.value).toBe(2);
+    expect(queue.front.next.next.next.value).toBe(3);
+  });
+  it('Can successfully dequeue off the queue', () => {
+    let queue = new Queue();
+    let val = faker.random.word();
+    queue.enqueue(val);
+    let poppedVal = queue.dequeue();
+    expect(poppedVal.value).toEqual(val);
+  });
+  it('Can successfully peek into a queue, seeing the expected value', () => {
+    let queue = new Queue();
+    let val = faker.random.word();
+    queue.enqueue(val);
+    let peekedVal = queue.peek();
+    expect(peekedVal).toEqual(val);
+  });
+  it('Can successfully empty a queue after multiple dequeues', () => {
+    let queue = new Queue();
+    let val = faker.random.word();
+    queue.enqueue(val);
+    queue.enqueue(val);
+    queue.enqueue(val);
+    queue.dequeue();
+    queue.dequeue();
+    queue.dequeue();
+    expect(queue.front).toBe(null);
+  });
 
+  it('Can successfully instantiate an empty queue', ()=> {
+    let queue = new Queue();
+    expect(queue instanceof Queue).toBeTruthy();
+  });
+
+  it('Calling dequeue or peek on empty queue raises exception', ()=> {
+    let queue = new Queue();
+    expect(queue.isEmpty()).toBeTruthy();
+  });
 });

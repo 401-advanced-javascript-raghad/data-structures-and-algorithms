@@ -16,4 +16,4 @@ Creates stack and queue datastructures with JavaScript, using ES6 class syntax.
 -isEmpty() --> Space : O(1), Time : O(1)
 
 ## Solution
-- [whiteboard](../assets/stack-queue.jpg)
+- [whiteboard](../assets/queue-and-stack.png)

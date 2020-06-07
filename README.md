@@ -11,4 +11,6 @@
 |LL-insertions      |[challenge-05](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/6)
 |ll-merge           |[challenge-08](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/8)
 |stack and queue    |[challenge-10](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/10)
+|queue with stacks  |[challenge-11](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/12)
+
 

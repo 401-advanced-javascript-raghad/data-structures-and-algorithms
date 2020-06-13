@@ -21,4 +21,4 @@ The recursive method has a time and space efficiency of O(n).
 
 ## Solution
 - [whiteboard](../assets/tree.png)
-- [whiteboard-link](https://drive.google.com/file/d/1F1VzaRiE2q4eojSNbNhexaEwMGAy8fMP/view?usp=sharing)
+- [whiteboard-link](https://drive.google.com/file/d/1njz6FNj54nD_2WyxSZgZyJAhyJXHPHyC/view?usp=sharing)

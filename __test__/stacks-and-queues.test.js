@@ -1,7 +1,6 @@
 'use strict';
 
 const faker = require('faker');
-const Node = require('../stacksAndQueues/stacks-and-queues').Node;
 const Stack = require('../stacksAndQueues/stacks-and-queues').Stack;
 const Queue = require('../stacksAndQueues/stacks-and-queues').Queue;
 

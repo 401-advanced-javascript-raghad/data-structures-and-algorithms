@@ -15,6 +15,7 @@
 |fifo animal selter  |[challenge-12](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/13)
 |multiBracketValidation  |[challenge-13](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/14)
 |Binary Tree and BST Implementation |[challenge-15](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/16)
+|   FizzBuzzTree     |[challenge-16](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/17)
 
 
 

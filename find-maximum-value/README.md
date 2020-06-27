@@ -8,7 +8,8 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 ## Efficiency
 ### Big O :
 
-- find-maximum-value : Time --> O(n), Space --> O(n)
+- find-maximum-value : Time --> O(n) because i used the recursive function,
+                       Space --> O(n) because i used the recursive function
 
 
 ## Solution

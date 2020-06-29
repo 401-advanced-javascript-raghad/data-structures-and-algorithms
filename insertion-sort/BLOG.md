@@ -41,8 +41,8 @@ const insertionSort = (arr) => {
 ## Approach & Efficiency
 ## Efficiency
 ### Big O :
-- Time: O(n), Because I used loops.
-- Space: O(n), Because I return array.
+- Time : O(n2)
+- Space :O(1)
 
 ## Solution
 ![First-Image](../assets/1.jpg)

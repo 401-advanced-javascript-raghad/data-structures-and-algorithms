@@ -90,4 +90,4 @@ quickSort(array);
 - Space: O(n).
 
 ## Solution
-![Image]()
+![Image](../assets/quickSort.jpg)

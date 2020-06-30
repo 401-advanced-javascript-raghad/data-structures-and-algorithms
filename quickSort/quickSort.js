@@ -36,5 +36,4 @@ const swap = (arr, i, low) => {
   arr[low] = temp;
 };
 
-let array = [8,4,23,42,16,15];
-quickSort(array);
+module.exports = quickSort;

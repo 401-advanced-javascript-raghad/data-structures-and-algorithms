@@ -91,3 +91,4 @@ quickSort(array);
 
 ## Solution
 ![Image](../assets/quickSort.jpg)
+

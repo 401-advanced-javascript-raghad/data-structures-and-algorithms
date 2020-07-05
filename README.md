@@ -14,14 +14,14 @@
 |queue with stacks       |[challenge-11](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/12)
 |fifo animal selter      |[challenge-12](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/13)
 |multiBracketValidation  |[challenge-13](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/14)
-|BinaryTree              |[challenge-15](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/16)
-|   FizzBuzzTree         |[challenge-16](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/17)
-|    breadthFirst        |[challenge-17](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/18)
-|    find-maximum-value  |[challenge-18](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/19)
-|   compareFiles         |[challenge-19](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/20)
-
-
-
-
+|Binary Tree and BST Implementation |[challenge-15](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/16)
+|   Maximum Value in a Binary Tree     |[challenge-16](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/17)
+|   Breadth-first Traversal |[challenge-17](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/18)
+|   FizzBuzzTree     |[challenge-18](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/19)
+|   Insertion Sort |[challenge-27](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/26)   
+|   Merge Sort     |[challenge-28](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/27)   
+|   Quick Sort     |[challenge-29](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/28)
+|   HashTable      |[challenge-30](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/29)
+|   RepetedWord    |[challenge-31](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/30)
 
 

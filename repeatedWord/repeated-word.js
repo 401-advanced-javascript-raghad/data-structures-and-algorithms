@@ -1,29 +1,37 @@
 'use strict';
+function hash(key,size){
+  return key.split('').reduce((p, n) => {
+    return p + n.charCodeAt(0);
+  }, 0) * 599 % size;
+}
 
-const HashTable = require('../hashtable/hashtable');
+function repeatedWord(str) {
+  let words = str.split(/[., -!?]/g);
+  let hashmap = new Array(words.length * 10);
 
-const repeatedWord = (str) => {
-  if (typeof str !== 'string') return 'input must be string';
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === '') continue;
+    let index = hash(words[i].toLowerCase(), hashmap.length);
 
-  // sanitizes input, puts into array
-  // log summer
+    if (hashmap[index]) {
+      let hash = hashmap[index];
+      while (hash) {
+        if (hash.key === words[i].toLowerCase()) return hash.key;
+        hash = hash.next;
+      }
 
-  const arr = str.toLowerCase().replace(/[., -!?]/g, '').split(' ');
-  const ht = new HashTable(1024);
-
-  for (let i = 0; i < arr.length; i++) {
-    // if the hashtable contains the word already, return that word
-
-    if (ht.contains(arr[i])) {
-      return arr[i];
+      hashmap[index] = {
+        key: words[i].toLowerCase(),
+        next: hashmap[index],
+      };
     }
-    // otherwise, add the word to the hashtable
+
     else {
-      ht.add(arr[i]);
+      hashmap[index] = { key: words[i].toLowerCase() };
     }
   }
-  // if no words repeated
+
   return null;
-};
+}
 
 module.exports = repeatedWord;

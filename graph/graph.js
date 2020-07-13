@@ -15,7 +15,23 @@ class Graph {
   constructor() {
     this._adjancyList = new Map();
   }
-    
+
+  has(value) {
+    let vertices = this.adjacencyList.keys(),
+      found = false;
+    for (let vertex of vertices) {
+      if (vertex.value === value) return found = true;
+    }
+    return found;
+  }
+  get(value) {
+    let vertices = this.adjacencyList.keys(),
+      found = null;
+    for (let vertex of vertices) {
+      if (vertex.value === value) return found = vertex;
+    }
+    return found;
+  }
   addVertex(value) {
     let vertex = new Vertex(value);
     this.adjacencyList.set(vertex, []);

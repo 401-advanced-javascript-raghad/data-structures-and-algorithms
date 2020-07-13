@@ -24,4 +24,4 @@ Implement a Hashtable with the following methods:
 - Space: O(1)
 
 ## Solution
-- ![whiteboard](../assets/hash.png)
+- ![whiteboard](../assets/hashtable.png)

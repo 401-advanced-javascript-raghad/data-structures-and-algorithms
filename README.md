@@ -23,5 +23,11 @@
 |   Quick Sort     |[challenge-29](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/28)
 |   HashTable      |[challenge-30](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/29)
 |   RepetedWord    |[challenge-31](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/30)
+|   tree-intersection    |[challenge-32](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/31)
+|   left-join    |[challenge-33](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/32)
+|   graph    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/33)
+|   breadth-first-graph    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/34)
+|   get-edges    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/35)
+
 
 

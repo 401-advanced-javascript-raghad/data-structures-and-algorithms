@@ -28,6 +28,8 @@
 |   graph    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/33)
 |   breadth-first-graph    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/34)
 |   get-edges    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/35)
+|   depth-first    |[challenge-35](https://github.com/401-advanced-javascript-raghad/data-structures-and-algorithms/pull/36)
+
 
 
 
